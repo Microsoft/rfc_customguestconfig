@@ -24,10 +24,8 @@ C:\git\policyfiles\downloads\Local_Script\Tools\MapGuidsToGpoNames.ps1 -rootdir 
 ConvertFrom-GPO -Path 'C:\git\policyfiles\downloads\GPOs\{C92CC433-A4EA-47B1-8B24-6FF732940E0E}\' -OutputPath 'C:\git\policyfiles\' -OutputConfigurationScript -Verbose
 
 # Compile configuration
-# MANUAL STEP - Replace PSDesiredStateConfiguration with PSDscResources
-# OPTIONAL MANUAL STEP - Rename configuration
 Rename-Item -Path C:\git\policyfiles\DSCFromGPO.ps1 -NewName C:\git\policyfiles\Server2019Baseline.ps1
-(Get-Content -Path C:\git\policyfiles\Server2019Baseline.ps1).Replace('DSCFromGPO', 'Server2019Basleline') | Set-Content -Path C:\git\policyfiles\Server2019Baseline.ps1
+(Get-Content -Path C:\git\policyfiles\Server2019Baseline.ps1).Replace('DSCFromGPO', 'Server2019Baseline') | Set-Content -Path C:\git\policyfiles\Server2019Baseline.ps1
 (Get-Content -Path C:\git\policyfiles\Server2019Baseline.ps1).Replace('PSDesiredStateConfiguration', 'PSDscResources') | Set-Content -Path C:\git\policyfiles\Server2019Baseline.ps1
 C:\git\policyfiles\Server2019Baseline.ps1
 
