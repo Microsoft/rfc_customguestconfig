@@ -9,7 +9,7 @@ Install-Module az.resources, az.policyinsights, az.storage, guestconfiguration, 
 # Download 2019 baseline files
 # https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10
 mkdir 'C:\git\policyfiles\downloads'
-Invoke-WebRequest -Uri 'https://download.microsoft.com/download/8/5/C/85C25433-A1B0-4FFA-9429-7E023E7DA8D8/Windows%2010%20Version%201809%20and%20Windows%20Server%202019%20Security%20Baseline.zip'-Out C:\git\policyfiles\downloads\Server2019Baseline.zip
+Invoke-WebRequest -Uri 'https://download.microsoft.com/download/8/5/C/85C25433-A1B0-4FFA-9429-7E023E7DA8D8/Windows%2010%20Version%201903%20and%20Windows%20Server%20Version%201903%20Security%20Baseline%20-%20Sept2019Update.zip'-Out C:\git\policyfiles\downloads\Server2019Baseline.zip
 
 # Unblock and expand the downloaded file
 Unblock-File C:\git\policyfiles\downloads\Server2019Baseline.zip
