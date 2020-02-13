@@ -9,7 +9,7 @@ Install-Module az.resources, az.policyinsights, az.storage, guestconfiguration, 
 # Download 2019 baseline files
 # https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10
 mkdir 'C:\git\policyfiles\downloads'
-Invoke-WebRequest -Uri 'https://download.microsoft.com/download/8/5/C/85C25433-A1B0-4FFA-9429-7E023E7DA8D8/Windows%2010%20Version%201903%20and%20Windows%20Server%20Version%201903%20Security%20Baseline%20-%20Sept2019Update.zip'-Out C:\git\policyfiles\downloads\Server2019Baseline.zip
+Invoke-WebRequest -Uri 'https://download.microsoft.com/download/8/5/C/85C25433-A1B0-4FFA-9429-7E023E7DA8D8/Windows%2010%20Version%201909%20and%20Windows%20Server%20Version%201909%20Security%20Baseline.zip' -Out C:\git\policyfiles\downloads\Server2019Baseline.zip
 
 # Unblock and expand the downloaded file
 Unblock-File C:\git\policyfiles\downloads\Server2019Baseline.zip
@@ -21,7 +21,7 @@ C:\git\policyfiles\downloads\Local_Script\Tools\MapGuidsToGpoNames.ps1 -rootdir 
 # RUN
 
 # Convert GP to DSC
-ConvertFrom-GPO -Path 'C:\git\policyfiles\downloads\GPOs\{C92CC433-A4EA-47B1-8B24-6FF732940E0E}\' -OutputPath 'C:\git\policyfiles\' -OutputConfigurationScript -Verbose
+ConvertFrom-GPO -Path 'C:\git\policyfiles\downloads\GPOs\{3657C7A2-3FF3-4C21-9439-8FDF549F1D68}\' -OutputPath 'C:\git\policyfiles\' -OutputConfigurationScript -Verbose
 
 # Compile configuration
 Rename-Item -Path C:\git\policyfiles\DSCFromGPO.ps1 -NewName C:\git\policyfiles\Server2019Baseline.ps1
