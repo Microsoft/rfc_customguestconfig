@@ -121,7 +121,7 @@ If you would like to test your own content, there are two options available.
 
 - Fork this repo and connect Azure DevOps to your project.
   This will require you to setup a new project in Azure DevOps with a service connection named 'ARM'
-  and a variable group connected to Azure KeyVault.  A step by step guid to creating a content
+  and a variable group connected to Azure KeyVault.  A step by step guide to creating a content
   package using the Guest Configuration cmdlets is published in the
   [docs folder](https://github.com/Microsoft/rfc_customguestconfig/blob/master/docs/draft.md).
   Feedback on this draft documentation is greatly appreciated.
