@@ -16,7 +16,7 @@ Unblock-File C:\git\policyfiles\downloads\Server2019Baseline.zip
 Expand-Archive -Path C:\git\policyfiles\downloads\Server2019Baseline.zip -DestinationPath C:\git\policyfiles\downloads\
 
 # Show the content details
-C:\git\policyfiles\downloads\Local_Script\Tools\MapGuidsToGpoNames.ps1 -rootdir C:\git\policyfiles\downloads\GPOs\ -Verbose
+C:\git\policyfiles\downloads\Scripts\Tools\MapGuidsToGpoNames.ps1 -rootdir C:\git\policyfiles\downloads\GPOs\ -Verbose
 
 # RUN
 
